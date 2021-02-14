@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Script</title>
+
+        
+    </head>
+    <body>
+        <button type="button" onclick="swap1(10,20)">swap1 Function</button>
+        <button type="button" onclick="swap2(10,20)">swap2 Function</button>
+        <button type="button" onclick="swap3(10,20)">swap3 Function</button>
+        <button type="button" onclick="swap4(10,20)">swap4 Function</button>
+
+
+
+
+<script>
+
+function swap1(a,b)
+{
+    var temp;
+    temp=a;
+    a=b;
+    b=temp;
+    alert(" After swapping a and b are " +a+ "  And  " +b);
+}
+ function swap2(a,b)
+ {
+     a=a+b;
+     b=a-b;
+     a=a-b;
+     alert(" After swapping a and b are " +a+ "  And  " +b);
+
+ }
+ function swap4(a,b)
+ {
+ var a=10;
+ var b=20;
+ a=a^b;
+ b=a^b;
+ a=a^b;
+ alert(" After swapping a and b are " +a+ "  And  " +b);
+ }
+
+ function swap3(a,b)
+ {
+     a=a*b;
+     b=a/b;
+     a=a/b;
+     alert(" After swapping a and b are " +a+ "  And  " +b);
+
+ }
+
+
+
+
+    </script>
+
+
+
+
+
+
+        </body>
+        </html>
