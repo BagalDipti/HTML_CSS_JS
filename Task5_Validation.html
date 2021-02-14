@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+.a
+{
+   padding-left: 500px;
+}
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="a">
+        <label for=fn>Name</label>
+
+    <input type="text" id="firstname" >
+    <input type="text" id="lastname"><br><br>
+    <label for=email>Email</label>
+
+    <input type="email" id="email"><br><br>
+
+    <label for=yp>Year of passing</label>
+        <select name="Pass Year" id="yp">
+            <option>Select_Year</option>
+
+
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+
+</select><br><br>
+
+<textarea rows="5" cols="30" id="ad" placeholder="Address"></textarea><br><br>
+
+</div>
+
+    <input type="button" onclick="validation1()" value="Submit" style="margin-left: 500px;">
+</form>
+    
+
+    <script type="text/javascript">
+
+        function validation1()
+            {
+               var fname=document.getElementById("firstname").value;
+
+               var lname=document.getElementById("lastname").value;
+               var add=document.getElementById("ad").value;
+               var pass=document.getElementById("yp").value;
+               var Email=document.getElementById("email").value;
+
+
+
+
+               if((fname.length>3&& fname.length<7)&&(lname.length>3 && lname.length<7))
+               {
+                   {
+                    alert("Name is:"+fname+ " "+lname);
+
+                   }
+       
+               }
+               else
+               {
+                   alert("invalid Name")
+               }
+
+               alert("Email :-"+Email)
+
+
+
+               if(pass=="2018"||pass=='2019'||pass=='2020'||pass=='2021')
+               {
+                alert("Year of passing "+pass)
+
+               }
+               else
+               {
+                   alert("Year of passing:-Requaired field")
+
+               }
+
+               if(add.length<100 && add.length>0)
+               {
+                   alert("Address:-" +add)
+               }
+               else
+               {
+                   alert("invalid")
+               }
+
+
+               
+
+
+
+
+        
+            }
+
+
+
+    </script>
+    
+
+</body>
+</html>
