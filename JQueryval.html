@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>JQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        
+
+        </head>
+        <body>
+            <select id="dropdown">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select>
+
+
+
+<script>
+
+function Show()
+{
+    var sel=$("#dropdown").val();
+    alert(sel);
+}
+
+$("select").change(Show);
+Show();
+
+
+   
+
+    </script>
+</body>
